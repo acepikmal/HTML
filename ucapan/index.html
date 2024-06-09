@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .card h1 {
+            color: #ff6f61;
+        }
+        .card p {
+            font-size: 1.2em;
+        }
+        .button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #ff5a49;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🎉🎊Selamat Ulang Tahun, Sayang🥳🎂</h1>
+        <img src="foto_Sayang.jpg.jpeg" alt="Foto Kenangan" width="150px" height="250px">
+        <p>Hari ini adalah hari yang sangat spesial karena ini adalah hari ulang tahunmu. Aku merasa sangat beruntung bisa berbagi kebahagiaan ini denganmu. Kamu adalah orang yang paling istimewa dalam hidupku, dan aku selalu bersyukur memiliki kamu di sisiku.
+
+            Aku selalu mencintaimu dan berharap kamu selalu ada untukku. 
+            Semoga semua impianmu tercapai dan tahun ini membawa banyak kebahagiaan, cinta, dan kesuksesan untukmu.
+            
+            Terima kasih telah menjadi dirimu yang luar biasa. Aku mencintaimu lebih dari kata-kata yang bisa kuungkapkan❤️</p>
+        <div class="button">Klik</div>
+    </div>
+    <script>
+        document.querySelector('.button').addEventListener('click', function() {
+            alert('I will always love you and hopefully you will always be there for me💕');
+        });
+    </script>
+</body>
+</html>
