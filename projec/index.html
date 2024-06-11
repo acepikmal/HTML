@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuisioner Anak SD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page" id="page-1">
+            <h2>Login</h2>
+            <div class="question">
+                <p>Nama:</p>
+                <input type="text" id="name">
+            </div>
+            <div class="question">
+                <p>Kelas:</p>
+                <input type="text" id="class">
+            </div>
+            <button onclick="nextPage(2)">Lanjut</button>
+        </div>
+
+        <div class="page" id="page-2">
+            <h2>Soal Matematika</h2>
+            <div class="question">
+                <img src="apel 1.png"
+                <p>Ada berapakah jumlah apel ?</p>
+                <input type="text" id="q1">
+            </div>
+            <div class="question">
+                <img src="nmor 3.jpg"
+                <p>Jadi ada berapakah semua apel ?</p>
+                <input type="text" id="q2">
+            </div>
+            <div class="question">
+                <img src="pengurangan (2).png"
+                <p>Ada berapa apel yang tersisa ?</p>
+                <input type="text" id="q3">
+            </div>
+            <div class="question">
+                <img src="perkalian.png"
+                <p>6 apel x 8 apel = ?</p>
+                <input type="text" id="q4">
+            </div>         
+    
+            <button onclick="prevPage(1)">Kembali</button>
+            <button onclick="nextPage(3)">Lanjut</button>
+        </div>
+
+        <div class="page" id="page-3">
+            <h2>Soal Pengetahuan</h2>
+            <div class="question">
+                <img src="serangga.png" 
+                <p>Berapa jumlah kaki serangga ini?</p>
+                <input type="text" id="q6">
+            </div>
+            <div class="question">
+                <img src="ikan.png" 
+                <p>Hewan ini bernapas menggunakan?</p>
+                <input type="text" id="q7">
+            </div>
+            <div class="question">
+                <img src="singa.jpg" 
+                <p>Apa makanan pokok dari hewan tersebut?</p>
+                <input type="text" id="q8">
+            </div>
+            <div class="question">
+                <img src="kelelawar.jpg" 
+                <p>Kapan hewan tersebut tidur?</p>
+                <input type="text" id="q9">
+            </div>
+            
+            <button onclick="prevPage(2)">Kembali</button>
+            <button onclick="nextPage(4)">Lanjut</button>
+        </div>
+
+        <div class="page" id="page-4">
+            <h2>Soal Essay</h2>
+            <div class="question"> 
+                <p>Apa yang dimaksud dengan habitat?</p>
+                <textarea id="q11"></textarea>
+            </div>
+            <div class="question"> 
+                <p>Apa itu mamalia? dan sebutkan contoh hewan mamalia!</p>
+                <textarea id="q12"></textarea>
+            </div>
+            <div class="question"> 
+                <p>Bagaimana kamu bisa mengurangi sampah plastik ?</p>
+                <textarea id="q13"></textarea>
+            </div>
+            <div class="question"> 
+                <p>Sebutkan tiga manfaat tanaman bagi manusia.</p>
+                <textarea id="q14"></textarea>
+            </div>
+           
+            <button onclick="prevPage(3)">Kembali</button>
+            <button onclick="submitQuiz()">Kirim Jawaban</button>
+            </div>
+ 
+            <div class="thank-you" id="thank-you">
+                <h2>Terima kasih!</h2>
+                <p>Jawaban Anda telah berhasil dikirim.</p>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
